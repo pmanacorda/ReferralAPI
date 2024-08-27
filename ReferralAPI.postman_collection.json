@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "e9e48a3a-4aba-4a43-b636-270a8ad9744e",
+		"name": "ReferralAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22952614"
+	},
+	"item": [
+		{
+			"name": "GET LINK",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5010/api/referral/link",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"referral",
+						"link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET HISTORY",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5010/api/referral/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"referral",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VALIDATE TOKEN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5010/api/referral/validate?token=JwbWFuYWNvcmRhI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"referral",
+						"validate"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "JwbWFuYWNvcmRhI"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
